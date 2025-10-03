@@ -1,43 +1,78 @@
-body {
-    text-align: center;
-    font-family: sans-serif;
-    background-color: aquamarine;
-}
+/* Center the game board and make it responsive */
 h1 {
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black
+}
+
+#scoreboard {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black
 }
 #game-board {
-  display: flex; 
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 30px; 
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
+  padding: 10px;
 }
+
+/* Style and size the mole buttons responsively */
 .mole {
-    width: 80px;
-    height: 80px;
-    background-color: aliceblue;
-    border: none;
-    border-radius: 50%;
-    transition: 0.1s;
-    cursor: pointer;
+  width: 90px;
+  height: 90px;
+  background: yellow;
+  border: 2px solid #888;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .mole:hover {
-    background-color: lightgoldenrodyellow;
+    background-color: aqua;
 }
-.active {
-    background-color: green;
+#restart-button:hover {
+    background-color: red;
+}
+
+.mole.active {
+  background: green;
 }
 #restart-button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
-    cursor: pointer;
+    background-color: aqua;
     border: none;
     border-radius: 5px;
-    background-color: lightcoral;
     color: white;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  #game-board {
+    gap: 1rem;
+    max-width: 95vw;
+    padding: 5px;
+  }
+  .mole {
+    width: 18vw;
+    height: 18vw;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
