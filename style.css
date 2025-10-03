@@ -38,14 +38,12 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
-.mole:hover {
-    background-color: aqua;
-}
 #restart-button:hover {
     background-color: red;
 }
-
+.mole:hover {
+    background-color: aqua;
+}
 .mole.active {
   background-color: green;
 }
