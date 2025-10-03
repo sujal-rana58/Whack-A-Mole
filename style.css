@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+#game-board {
+  display: flex; 
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px; 
+}
+.mole {
+    width: 80px;
+    height: 80px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 50%;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.mole:hover {
+    background-color: lightgoldenrodyellow;
+}
+.active {
+    background-color: green;
+}
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+}
+
+
