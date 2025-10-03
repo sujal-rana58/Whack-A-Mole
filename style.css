@@ -47,11 +47,10 @@ h1 {
 }
 
 .mole.active {
-  background: green;
+  background-color: green;
 }
 .mole.active:hover {
-  background: darkred;
-  border-color: #880000;
+  background-color: darkred;
 }
 #restart-button {
     padding: 10px 20px;
