@@ -49,6 +49,10 @@ h1 {
 .mole.active {
   background: green;
 }
+.mole.active:hover {
+  background: darkred;
+  border-color: #880000;
+}
 #restart-button {
     padding: 10px 20px;
     font-size: 1.2rem;
